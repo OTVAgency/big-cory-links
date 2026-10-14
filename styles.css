@@ -108,3 +108,29 @@ footer a { color:var(--white); }
 }
 @media (max-width:359px) { .page-shell { padding:0 16px; } h1 { font-size:58px; } .section-header .eyebrow { font-size:8px; } .social-link > .icon:last-child { display:none; } .social-link { padding:13px 10px; } }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } * { transition:none !important; } }
+
+/* Creator Store (phase 1 teaser) */
+.store { margin-top:38px; }
+@media (max-width:700px) { .store { margin-top:30px; } }
+.store-card { display:block; padding:24px; border:1px solid var(--cyan); border-radius:10px; background:linear-gradient(135deg,#0F2A2E 0%,var(--panel) 70%); transition:background .16s; }
+.store-card:hover { background:#20252A; }
+.store-card .eyebrow { color:var(--cyan); }
+.store-card h3 { font-family:Anton,Impact,sans-serif; font-weight:400; font-size:30px; line-height:1.05; letter-spacing:-.4px; margin:10px 0; }
+.store-card p:not(.eyebrow) { color:var(--muted); font-size:15px; line-height:1.5; margin:0 0 16px; }
+.store-teasers { list-style:none; padding:0; margin:12px 0 0; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+.store-teasers li { padding:16px; border:1px solid var(--line); border-radius:10px; display:flex; flex-direction:column; gap:6px; }
+.store-teasers .eyebrow { color:var(--muted); font-size:8px; }
+.store-teasers strong { font-size:15px; letter-spacing:-.3px; line-height:1.25; }
+.store-teasers .soon { margin-top:auto; font-size:11px; font-weight:700; color:var(--cyan); letter-spacing:.5px; }
+.merch-tile { border-style:dashed !important; background:var(--panel); }
+@media (max-width:359px) { .store-teasers { grid-template-columns:1fr; } .store-card h3 { font-size:26px; } }
+
+/* High-placement Creator Store banner */
+.store-banner { display:flex; align-items:center; gap:16px; min-height:88px; padding:20px 24px; margin-bottom:38px; border-radius:12px; background:var(--cyan); color:var(--black); transition:transform .16s, box-shadow .16s; }
+.store-banner:hover { transform:translateY(-2px); box-shadow:0 10px 30px rgba(78,215,232,.25); }
+.store-banner > span:first-child { flex:1; min-width:0; }
+.store-banner strong { display:block; font-family:Anton,Impact,sans-serif; font-weight:400; font-size:30px; line-height:1.05; margin:4px 0; }
+.store-banner-sub { font-size:13px; font-weight:700; }
+.store-banner-arrow { font-size:34px; font-weight:700; }
+.store-banner:focus-visible { outline-color:var(--white); }
+@media (max-width:700px) { .store-banner { margin-bottom:30px; } .store-banner strong { font-size:26px; } }
